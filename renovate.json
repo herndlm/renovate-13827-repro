@@ -1,5 +1,23 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:base",
+    ":rebaseStalePrs"
+  ],
+  "additionalBranchPrefix": "{{parentDir}}-",
+  "prCreation": "not-pending",
+  "prNotPendingHours": 1,
+  "rangeStrategy": "update-lockfile",
+  "rollbackPrs": true,
+  "stabilityDays": 3,
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "prPriority": -1
+    },
+    {
+      "matchUpdateTypes": ["patch"],
+      "stabilityDays": 1
+    }
   ]
 }
