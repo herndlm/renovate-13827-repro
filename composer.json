@@ -1,0 +1,23 @@
+{
+    "name": "herndlm/renovate-13827-repro",
+    "type": "project",
+    "require": {
+        "symfony/http-kernel": "^5.4",
+        "symfony/http-foundation": "^5.4",
+        "symfony/serializer": "^5.4",
+        "symfony/process": "^5.4",
+        "symfony/console": "^5.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Herndlm\\Renovate13827Repro\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Martin Herndl",
+            "email": "martin@herndl.org"
+        }
+    ]
+}
